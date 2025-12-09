@@ -37,7 +37,7 @@ Estimate stock daily returns, categorize days into "good", "mid", or "bad", and 
     - Mean accuracy vs window size (`plot_accuracy_vs_window()`)  
     - Distribution of prediction accuracy across all windows (`plot_accuracy_distribution_all_windows()`)  
 
-- **master_pipeline.R**
+- **pipeline.R**
   - Loads all scripts and raw stock data  
   - Cleans data and generates `df`  
   - Loops over multiple window sizes (e.g., 100, 150, …, 500):
@@ -49,7 +49,7 @@ Estimate stock daily returns, categorize days into "good", "mid", or "bad", and 
 ## How to Run
 
 1. Place all scripts and your stock CSV file in the same directory.  
-2. Open `master_pipeline.R` in R.  
-3. Edit the path to your stock CSV in `master_pipeline.R`:  
+2. Open `pipeline.R` in R.  
+3. Edit the path to your stock CSV in `pipeline.R`:  
    ```r
    raw_data <- read_csv("C:/path/to/your/stock.csv")
