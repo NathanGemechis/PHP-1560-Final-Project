@@ -29,13 +29,15 @@ Estimate stock daily returns, categorize days into "good", "mid", or "bad", and 
     - Computes overall accuracy per window size  
 
 - **visualizations.R**
-  - Visualizes stock data and predictions:
-    - Daily percent changes over time (`plot_percent_changes()`)  
-    - Day type timeline (`plot_day_types()`)  
-    - Prediction accuracy distribution per window (`plot_prediction_accuracy_dist()`)  
-    - Actual vs predicted day types (`plot_pred_vs_actual()`)  
-    - Mean accuracy vs window size (`plot_accuracy_vs_window()`)  
-    - Distribution of prediction accuracy across all windows (`plot_accuracy_distribution_all_windows()`)  
+  - Visualizes stock data, state classifications, and model performance:
+    - Daily percent changes over time (`plot_percent_changes()`)
+    - Day type classification timeline (`plot_day_types()`)
+    - Markov transition matrix heatmap (`plot_transition_matrix()`)
+    - Prediction accuracy distribution (`plot_prediction_accuracy_dist()`)
+    - Prediction accuracy vs. window size (`plot_accuracy_vs_window()`)
+    - Actual vs predicted day types (`plot_pred_vs_actual()`)
+    - Mean accuracy ± SD across all windows (`plot_accuracy_summary_all_windows()`)
+
 
 - **pipeline.R**
   - Loads all scripts and raw stock data  
