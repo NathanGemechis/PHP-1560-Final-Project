@@ -27,7 +27,7 @@ clean_prices <- function(data) {
       open   = as.numeric(gsub("[$,]", "", open)),
       high   = as.numeric(gsub("[$,]", "", high)),
       low    = as.numeric(gsub("[$,]", "", low)),
-      volume = as.numeric(volume)  # already numeric in your CSV
+      volume = as.numeric(volume)  # already numeric but in case not
     ) %>%
     # Convert date column safely to Date type
     mutate(
@@ -74,3 +74,4 @@ clean_data <- function(data) {
   data <- add_change(data)       # Step 2: compute daily changes
   data <- categorize_days(data)  # Step 3: classify day types
 }
+
