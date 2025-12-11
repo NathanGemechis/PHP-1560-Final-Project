@@ -165,7 +165,7 @@ plot_accuracy_summary_all_windows <- function(all_results_df) {
     )
 }
 
-# Plot rolling average of closing price (without zoo)
+# Plot rolling average of closing price
 plot_rolling_avg <- function(data, window = 20) {
   data <- data %>%
     arrange(date) %>%
@@ -205,4 +205,5 @@ plot_percent_change_hist <- function(data, bins = 30) {
       plot.title = element_text(face = "bold", hjust = 0.5),
       axis.title = element_text(face = "bold")
     )
+
 }
