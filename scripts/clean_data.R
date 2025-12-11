@@ -75,3 +75,4 @@ clean_data <- function(data) {
   data <- categorize_days(data)  # Step 3: classify day types
 }
 
+
